@@ -11,24 +11,255 @@ body {
   height: 100%;
   width: 100%;
   font-family: "carnas", "ubuntu";
+  color: #023e8a;
 }
 
-#home {
-  display: block;
-  background: #fff;
-  height: 100%;
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0.67em 0;
+}
+
+.container {
+  max-width: 1380px;
   width: 100%;
-  /* padding: 60px; */
-  /* padding-left: 120px; */
-  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
-#home #logo {
-  padding-top: 15%;
-  width: 40%;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#home h1 {
-  font-size: 3rem;
-  color: #00b3e3;
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  z-index: 9999;
+}
+
+#header_logo {
+  width: 160px;
+}
+
+.header__row {
+  justify-content: space-between;
+}
+
+.left_header_part {
+  display: flex;
+  max-width: 310px;
+  width: 20%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main_nav_menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main_nav_menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main_nav_menu li {
+  display: flex;
+}
+
+.main_nav_menu a {
+  padding: 10px 0px 10px 35px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  transition: all 0.4s ease-out;
+  position: relative;
+  overflow: hidden;
+  color: #023e8a;
+}
+/* **** */
+
+/* SECTIONS */
+
+.banner_section {
+  padding-top: 168px;
+  padding-bottom: 143px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.banner_text_wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.banner_text_wrapper h1 {
+  letter-spacing: 0.04em;
+  font-style: normal;
+  font-weight: 900;
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+
+.banner_text_wrapper > p {
+  font-size: 36px;
+  letter-spacing: 0.04em;
+  font-style: normal;
+  font-weight: 900;
+  color: #000;
+  line-height: 1.2;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  margin-bottom: 48px;
+}
+
+.banner_img_wrapper {
+  width: 50%;
+}
+
+.banner_top_left_img {
+  position: absolute;
+  top: 11vh;
+  left: 0;
+  z-index: -1;
+}
+
+.banner_bottom_left_img {
+  position: absolute;
+  bottom: 3%;
+  left: -80px;
+  z-index: -1;
+}
+
+.services_section {
+  position: relative;
+  padding: 37px 0 180px 0;
+}
+
+.services_right_img {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: -400px;
+}
+
+.services_left_img {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: -800px;
+}
+
+.who_we_are_section {
+  position: relative;
+  padding-bottom: 90px;
+}
+
+.who_we_are_section #shirt {
+  position: relative;
+  top: 450px;
+}
+
+.who_we_are_section_img {
+  position: absolute;
+  z-index: -1;
+  bottom: -650px;
+  right: 0;
+}
+
+footer {
+  padding-bottom: 24px;
+  position: relative;
+}
+
+.footer_top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 50px 0;
+}
+
+.arrow_to_top {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-out;
+}
+
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer_img_left {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.footer_img_left {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.copyrights_wrapper {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.footer_bottom .main_nav_menu {
+  width: 50%;
+}
+
+.footer_socials {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer_socials ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.footer_socials a {
+  display: block;
+  padding: 10px;
 }
