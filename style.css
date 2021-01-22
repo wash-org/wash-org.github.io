@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "carnas";
+  src: url(fonts/CarnasRegular.otf);
+}
+
+html,
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "carnas", "ubuntu";
+}
+
+#home {
+  display: block;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  /* padding: 60px; */
+  /* padding-left: 120px; */
+  box-sizing: border-box;
+}
+
+#home #logo {
+  padding-top: 15%;
+  width: 40%;
+}
+
+#home h1 {
+  font-size: 3rem;
+  color: #00b3e3;
+}
