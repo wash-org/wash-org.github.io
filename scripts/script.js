@@ -7800,9 +7800,11 @@ jQuery.noConflict();
     cith = {
         init: function() {
             let self = this,
-                $scroll_to_top = $('#scroll_to_top');
+                $scroll_to_top = $('#scroll_to_top'),
+                $scroll_to_top_logo = $('#scroll_to_top_logo');
             $(document).ready(function() {
                 self.scrollToTop($scroll_to_top);
+                self.scrollToTop($scroll_to_top_logo);
                 self.burger();
                 self.services_slider();
                 self.how_it_works_slider();

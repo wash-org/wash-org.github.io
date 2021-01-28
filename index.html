@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row header__row">
                 <div class="left_header_part">
-                    <a href="" class="logo_wrapper">
+                    <a id="scroll_to_top_logo" href="javascript:void(0)" class="logo_wrapper">
                         <img id="header_logo" src="img/logo.svg" />
                     </a>
                     <div class="icon">
@@ -355,13 +355,19 @@
 
     <script defer src='scripts/script.js'></script>
     <script>
-        mapboxgl.accessToken = 'pk.eyJ1Ijoic2FpZHppYW5pIiwiYSI6ImNra2Nya25kcjA0bmIycHF1ZW93bGZzY3IifQ.JzwdF5r_gm_bWtcJO9X5eg ';
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic2FpZHppYW5pIiwiYSI6ImNra2NyaWFjejBrZDEyb29jenFlb3JsZjcifQ.GA6ctU8jnM31qo3-ToaKSg';
+
         var map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11',
-            center: [-74.50, 40],
-            zoom: 9
+            style: 'mapbox://styles/saidziani/ckkedwo7z162j17pjxs72qzoi',
+            // style: 'mapbox://styles/saidziani/ckkgvhudb0r5x17lkjfdzfony',
+            center: [3.185882, 36.716947],
+            zoom: 16
         });
+
+        var marker = new mapboxgl.Marker()
+            .setLngLat([3.187112, 36.717497])
+            .addTo(map);
     </script>
 </body>
 
