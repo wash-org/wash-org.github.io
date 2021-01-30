@@ -7809,6 +7809,7 @@ jQuery.noConflict();
                 self.services_slider();
                 self.how_it_works_slider();
                 self.anchoreScroll();
+                self.store_pictures_slider();
             });
         },
         scrollToTop: function(btn) {
@@ -7817,6 +7818,36 @@ jQuery.noConflict();
                 $('html, body').animate({
                     scrollTop: 0
                 }, '400');
+            });
+        },
+        store_pictures_slider: function() {
+            $('.store_pictures').slick({
+                mobileFirst: true,
+                infinite: true,
+                slidesToShow: 1,
+                nextArrow: $('.store_pictures_arrows').find('.pictures_slider_next_arrow'),
+                prevArrow: $('.store_pictures_arrows').find('.pictures_slider_prev_arrow'),
+                responsive: [{
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 2,
+                            dots: false,
+                            speed: 500,
+                            cssEase: 'ease-out',
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 2,
+                            dots: false,
+                            speed: 500,
+                            cssEase: 'ease-out',
+                            slidesToScroll: 1,
+                        }
+                    }
+                ]
             });
         },
         burger: function() {

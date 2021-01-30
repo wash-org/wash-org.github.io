@@ -574,8 +574,8 @@ textarea {
     font-weight: bold;
     font-size: 16px;
     padding: 10px 40px 9px;
-    border: 1px solid #000;
-    color: #000;
+    border: 1px solid #023e8a;
+    color: #023e8a;
     border-radius: 42px;
     transition: all 0.4s ease-out;
 }
@@ -693,7 +693,7 @@ header.active .logo_wrapper {
     content: "";
     display: block;
     width: 0;
-    background: #000;
+    background: #023e8a;
     height: 2px;
     position: absolute;
     bottom: 0;
@@ -767,7 +767,7 @@ header.active .logo_wrapper {
     line-height: 1.2;
     letter-spacing: 0.04em;
     text-transform: capitalize;
-    color: #000000;
+    color: #023e8a;
 }
 
 .main_nav_menu .sub-menu a::before {
@@ -815,7 +815,7 @@ header.active .logo_wrapper {
 .burger {
     width: 40px;
     height: 2px;
-    background-color: #000;
+    background-color: #023e8a;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -830,7 +830,7 @@ header.active .logo_wrapper {
     position: absolute;
     width: 40px;
     height: 2px;
-    background: #000;
+    background: #023e8a;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
 }
@@ -888,7 +888,7 @@ footer {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    border: 1px solid #000;
+    border: 1px solid #023e8a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1293,7 +1293,7 @@ h2 {
     font-size: 16px;
     letter-spacing: 0.04em;
     line-height: 1.2;
-    color: #000;
+    color: #023e8a;
     padding: 0 32px;
     text-align: center;
 }
@@ -1307,7 +1307,7 @@ h2 {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    border: 1px solid #000;
+    border: 1px solid #023e8a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1358,7 +1358,7 @@ h2 {
         width: 40px;
         height: 40px;
         border-radius: 100%;
-        border: 1px solid #000;
+        border: 1px solid #023e8a;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1417,7 +1417,7 @@ h2 {
 .how_it_works_section .banner_text_wrapper .content p {
     font-size: 16px;
     letter-spacing: 0.04em;
-    color: #000000;
+    color: #023e8a;
     font-style: normal;
     line-height: 1.2;
     font-weight: 400;
@@ -1460,7 +1460,7 @@ h2 {
     letter-spacing: 0.04em;
     line-height: 1.2;
     margin-bottom: 12px;
-    color: #000;
+    color: #023e8a;
 }
 
 .how_it_works_slider__text p {
@@ -1469,7 +1469,7 @@ h2 {
     font-size: 16px;
     letter-spacing: 0.04em;
     line-height: 1.2;
-    color: #000;
+    color: #023e8a;
 }
 
 .how_it_works_slider_item_wrapper {
@@ -1587,7 +1587,7 @@ h2 {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.04em;
-    color: #000;
+    color: #023e8a;
     margin-bottom: 25px;
 }
 
@@ -1691,9 +1691,9 @@ h2 {
 }
 
 .contact_us_submit:hover {
-    color: #000;
+    color: #023e8a;
     background: #fff;
-    border: 1px solid #000;
+    border: 1px solid #023e8a;
 }
 
 .contact_form_img_wrapper {
@@ -1815,4 +1815,59 @@ h2 {
     -webkit-box-shadow: inset 0px 0px 10px 5px rgba(255, 255, 255, 0.75);
     -moz-box-shadow: inset 0px 0px 10px 5px rgba(255, 255, 255, 0.75);
     box-shadow: inset 0px 0px 10px 5px rgba(255, 255, 255, 0.75);
+}
+
+.store_picture_item {
+    border-radius: 15px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.store_picture_item_wrapper {
+    padding: 0 16px;
+}
+
+.store_pictures_controls {
+    display: flex;
+    width: 100%;
+    padding-bottom: 24px;
+}
+
+.store_pictures_arrows {
+    display: flex;
+}
+
+.store_pictures_arrows [class^="pictures_slider"]:first-child {
+    margin-right: 40px;
+}
+
+.store_pictures_arrows [class^="pictures_slider"] {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s ease-out;
+    cursor: pointer;
+}
+
+.store_pictures_arrows [class^="pictures_slider"]:hover {
+    border: 1px solid #BCD081;
+}
+
+.pictures_slider_prev_arrow {
+    left: calc(50% - 60px);
+}
+
+.pictures_slider_next_arrow {
+    left: calc(50% + 20px);
+}
+
+@media screen and (max-width: 680px) {
+    .store_pictures_arrows {
+        display: none;
+    }
 }
