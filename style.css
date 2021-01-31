@@ -1674,7 +1674,7 @@ h2 {
 }
 
 .contact_us_submit {
-    background: #023e8a;
+    background: #a0a0a0;
     border-radius: 42px;
     padding: 10px 12px;
     min-width: 211px;
@@ -1686,15 +1686,16 @@ h2 {
     line-height: 1.2;
     letter-spacing: 0.04em;
     color: #ffffff;
-    border: 1px solid #023e8a;
-    cursor: pointer;
+    border: 1px solid #a0a0a0;
+    /* cursor: pointer; */
 }
 
-.contact_us_submit:hover {
+
+/* .contact_us_submit:hover {
     color: #023e8a;
     background: #fff;
     border: 1px solid #023e8a;
-}
+} */
 
 .contact_form_img_wrapper {
     margin-bottom: 0px;
