@@ -1847,7 +1847,7 @@ h2 {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    border: 1px solid #000;
+    border: 1px solid #023e8a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1856,7 +1856,7 @@ h2 {
 }
 
 .store_pictures_arrows [class^="pictures_slider"]:hover {
-    border: 1px solid #BCD081;
+    border: 1px solid #023e8a;
 }
 
 .pictures_slider_prev_arrow {
